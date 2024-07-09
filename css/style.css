@@ -1,0 +1,90 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0; padding: 0;
+}
+
+:root {
+    --header-backgroundColor: rgb(0, 105, 190);
+
+    --label-backgroundColor: rgb(0, 130, 236);
+    --label-textColor: rgb(233, 233, 233);
+    --label-borderColor: rgb(10, 120, 209);
+
+    --cards-backgroundColor: rgb(243, 243, 243);
+}
+
+header {
+    background: var(--header-backgroundColor);
+    padding: 8px 12px;
+    display: flex;
+    flex-direction: none;
+    z-index: 1;
+}
+
+header label {
+    background: var(--label-backgroundColor);
+    padding: 8px 0;
+    border-radius: 5px;
+    width: 140px;
+    text-align: center;
+    justify-content: center;
+}
+
+header label i {
+    color: var(--label-textColor);
+    font-size: 13px;
+    font-weight: bold;
+}
+
+svg {
+    fill: var(--label-textColor);
+    width: 20px;
+    height: 20px;
+}
+
+header div {
+    width: 100%;
+}
+
+.modal {
+    display: none;
+}
+
+.cards {
+    padding: 16px;
+}
+
+.cards .cnf-div {
+    background: var(--cards-backgroundColor);
+    padding: 8px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #0000006c;
+    margin-bottom: 12px;
+}
+
+.cards .cnf-name {
+    font-size: 28px;
+    font-weight: bold;
+    color: rgb(11, 102, 240);
+}
+
+.cards .cnf-info {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.cards .div-icons {
+    margin-top: 5px;
+}
+
+.cards .div-icons button {
+    background: var(--label-backgroundColor);
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+}
+
+@media (max-width: 600px){
+
+}
